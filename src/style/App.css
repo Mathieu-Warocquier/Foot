@@ -1,4 +1,22 @@
-.App {
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --font1: 'Lobster', cursive;
+  --font2: 'Montserrat', sans-serif;
+  --font3: 'Poppins', sans-serif;
+ } */
+
+
+
+ .itemNav {
+  font-family: var(--font3);
+ }
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +53,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
