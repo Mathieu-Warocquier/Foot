@@ -6,7 +6,7 @@ function ItemFiltre({logo, children}) {
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-         <img src={logo} alt="" />
+         <img src={logo} alt='logo de la ligue'/>
         </div>
         <div className="flip-card-back">
           <h1>{children}</h1>
