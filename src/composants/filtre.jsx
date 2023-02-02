@@ -13,7 +13,7 @@ const FiltreContainer = styled.div`
   align-items: center;
   background-color: black;
   color: #F1F1F1;
-  padding-bottom: 15px;
+  padding: 55px 0;
 `
 
 const FiltreItems = styled.div`
@@ -24,7 +24,6 @@ const FiltreItems = styled.div`
 
 function Filtre() {
   return <FiltreContainer>
-          <h1>Choisis ta ligue</h1>
           <FiltreItems>
             <ItemFiltre logo={ligue1}>Ligue 1</ItemFiltre>
             <ItemFiltre logo={PL}>Premier League</ItemFiltre>

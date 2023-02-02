@@ -6,7 +6,10 @@ function ItemContenu({logo, children}) {
             <img className='ContenuImg' src={logo} alt="logo de la ligue" />
           </div>
         </div>
-        <p className='ContenuTexte'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit mollitia laborum quaerat optio ipsum ducimus magnam obcaecati placeat animi sint!</p>
+        <div className='ContenuTexte'>
+          <p >{children}</p>
+          <button className="BtnContenu">Par ici</button>
+        </div>
   </div>
   )
 }

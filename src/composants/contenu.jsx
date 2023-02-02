@@ -6,25 +6,39 @@ import liga from '../assets/liga.png'
 import serieA from '../assets/serieA.png'
 import bundes from '../assets/bundes.png'
 import ItemContenu from './ItemContenu'
+import HistoireLigue1 from './Histoires/histoireL1'
+import HistoirePL from './Histoires/histoirePL'
+import HistoireLiga from './Histoires/histoireLiga'
+import HistoireSerieA from './Histoires/histoireSerieA'
+import HistoireBundes from './Histoires/histoireBundes'
 
 const ContenuContainer = styled.div`
   background-color: black;
   display: flex;
   flex-direction: column;
   color: #F1F1F1;
-
+  padding: 15px 30px;
 `
 
 function ContenuHome() {
   return (
   <ContenuContainer>
     <h1>Description</h1>
-      <ItemContenu logo={ligue1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus laudantium aliquid explicabo eum nihil!</ItemContenu>
-      <ItemContenu logo={PL}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus laudantium aliquid explicabo eum nihil!</ItemContenu>
-      <ItemContenu logo={liga}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus laudantium aliquid explicabo eum nihil!</ItemContenu>
-      <ItemContenu logo={serieA}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus laudantium aliquid explicabo eum nihil!</ItemContenu>
-      <ItemContenu logo={bundes}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus laudantium aliquid explicabo eum nihil!</ItemContenu>
-
+      <ItemContenu logo={ligue1}>
+        <HistoireLigue1 />
+      </ItemContenu>
+      <ItemContenu logo={PL}>
+        <HistoirePL />
+      </ItemContenu>
+      <ItemContenu logo={liga}>
+        <HistoireLiga />
+      </ItemContenu>
+      <ItemContenu logo={serieA}>
+        <HistoireSerieA />
+      </ItemContenu>
+      <ItemContenu logo={bundes}>
+        <HistoireBundes />
+      </ItemContenu>
   </ContenuContainer>
   )
 }

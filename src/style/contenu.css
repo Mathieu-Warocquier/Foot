@@ -33,6 +33,14 @@
 }
 
 .ContenuTexte {
-  padding: 40px;
-  width: 70%;
+  padding: 0 90px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.BtnContenu {
+  width: 100px;
+  cursor: pointer;
 }
