@@ -13,7 +13,7 @@ import HistoireSerieA from './Histoires/histoireSerieA'
 import HistoireBundes from './Histoires/histoireBundes'
 
 const ContenuContainer = styled.div`
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
   color: #F1F1F1;

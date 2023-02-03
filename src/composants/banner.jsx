@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const BannerContainer = styled.div`
   display: flex;
-  background-color: black;
+  /* background-color: black; */
 `
 
 const BannerTitle = styled.div`

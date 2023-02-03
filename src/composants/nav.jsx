@@ -11,7 +11,7 @@ function Nav() {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
   `
 
   const Logo = styled.img`

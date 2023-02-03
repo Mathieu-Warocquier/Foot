@@ -11,7 +11,7 @@ const FiltreContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
   color: #F1F1F1;
   padding: 63px 0;
 `
