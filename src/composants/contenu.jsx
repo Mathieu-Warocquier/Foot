@@ -23,17 +23,17 @@ const ContenuContainer = styled.div`
 function ContenuHome() {
   return (
   <ContenuContainer>
-    <h1>Description</h1>
+    <h1 className='titreContainer'>Description</h1>
       <ItemContenu logo={ligue1}>
         <HistoireLigue1 />
       </ItemContenu>
-      <ItemContenu logo={PL}>
+      <ItemContenu logo={PL} ordre="type2">
         <HistoirePL />
       </ItemContenu>
       <ItemContenu logo={liga}>
         <HistoireLiga />
       </ItemContenu>
-      <ItemContenu logo={serieA}>
+      <ItemContenu logo={serieA} ordre="type2">
         <HistoireSerieA />
       </ItemContenu>
       <ItemContenu logo={bundes}>

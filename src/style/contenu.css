@@ -1,6 +1,12 @@
 .ContenuDescription {
   display: flex;
-  padding: 20px 70px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 70px;
+}
+
+.secondType {
+  flex-direction: row-reverse;
 }
 
 .ContenuImg {
@@ -10,6 +16,11 @@
   background-color: #F1F1F1;
   border-radius: 3px;
 
+}
+
+.titreContainer {
+  font-family: 'Ubuntu', 'Poppins', Courier;
+  text-shadow: 2px 2px 2px #43885E;
 }
 
 .imageBorder {
@@ -25,7 +36,7 @@
 .imageBorder2 {
   height: 210px;
   width: 150px;
-  border: 2px solid blue;
+  border: 2px solid #0f2e4c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +50,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 
 .BtnContenu {
   width: 100px;

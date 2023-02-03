@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import ballon from '../assets/ballon.png'
-import '../style/App.css';
+
 
 function Nav() {
 
@@ -27,26 +27,26 @@ function Nav() {
     align-items: center;
   `
 
-  const BtnNav = styled.a`
+  const BtnLink = styled(Link)`
     color: #F1F1F1;
+    font-family: 'Ubuntu', 'Poppins', Courier;
     font-weight: bold;
     font-size: 16px;
     padding: 0 3px;
+    text-decoration: none;
     transition: all 200ms linear;
-    cursor: pointer;
     &:hover {
-      color: white;
+      color: #6dd06e;
       border-left: 3px solid white;
-      font-size: 17px;
     }
-  `
+    `
 
   return <NavContainer>
     <Link to="/"><Logo src={ballon} alt="ballonLogo" /></Link>
     <OngletsContainer>
-      <BtnNav className='itemNav'>Acceuil</BtnNav>
-      <BtnNav className='itemNav'>Ligues</BtnNav>
-      <BtnNav className='itemNav'>Equipes</BtnNav>
+      <BtnLink to="/" >Acceuil</BtnLink>
+      <BtnLink to="/ligues" >Ligues</BtnLink>
+      <BtnLink to="/" >Equipes</BtnLink>
     </OngletsContainer>
   </NavContainer>
 }

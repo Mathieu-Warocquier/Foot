@@ -13,7 +13,7 @@ const FiltreContainer = styled.div`
   align-items: center;
   background-color: black;
   color: #F1F1F1;
-  padding: 55px 0;
+  padding: 63px 0;
 `
 
 const FiltreItems = styled.div`

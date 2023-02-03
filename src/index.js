@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route} from 'react-router-dom'
 import './index.css';
 import Home from './pages/Home';
+import Ligues from './pages/Ligues';
 import reportWebVitals from './reportWebVitals';
 import Nav from './composants/nav';
 
@@ -13,6 +15,7 @@ root.render(
     <Nav />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/ligues" element={<Ligues />} />
     </Routes>
   </BrowserRouter>
 );
