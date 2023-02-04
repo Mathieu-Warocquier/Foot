@@ -5,19 +5,19 @@ import styled from 'styled-components'
 function Ligues() {
   const [results, setData] = useState([]);
 
-  useEffect(() => {
-    // fetch("https://v3.football.api-sports.io/leagues?id=61", {
-      "method": "GET",
-      "headers": {
-        "x-rapidapi-host": "v3.football.api-sports.io",
-        "x-rapidapi-key": "5b217cb77b612be62f69b774f415a79c"
-      }
-    })
-    .then((response) => response.json())
-    .then((result) => {setData(result.response)})
-    .catch((error) => console.log(error))
+  // useEffect(() => {
+  //   fetch("https://v3.football.api-sports.io/leagues?id=61", {
+  //     "method": "GET",
+  //     "headers": {
+  //       "x-rapidapi-host": "v3.football.api-sports.io",
+  //       "x-rapidapi-key": "5b217cb77b612be62f69b774f415a79c"
+  //     }
+  //   })
+  //   .then((response) => response.json())
+  //   .then((result) => {setData(result.response)})
+  //   .catch((error) => console.log(error))
 
-    ;},[]);
+  //   ;},[]);
 
     const CardContainer = styled.div`
       color: white;
