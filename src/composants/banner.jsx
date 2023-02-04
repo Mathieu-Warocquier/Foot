@@ -16,7 +16,7 @@ const BannerTitle = styled.div`
 `
 const Titre = styled.h1 `
   font-size: 60px;
-  font-family: 'Ubuntu', 'Poppins', Courier;
+  font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
   font-weight: bolder;
   background-image: linear-gradient(45deg, #0f2e4c,#6dd06e);
   -webkit-background-clip: text;
@@ -24,11 +24,11 @@ const Titre = styled.h1 `
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   margin: 0;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 `
 
 const BannerMsg = styled.p`
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Ubuntu', 'Courier New', Courier, monospace;
   width: 80%;
   font-size: 20px;
   font-weight: bold;

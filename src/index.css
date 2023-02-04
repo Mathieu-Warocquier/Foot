@@ -9,6 +9,30 @@
  --font4: 'Ubuntu';
 } */
 
+@font-face {
+  font-family: 'bespoke_stencilbold';
+  src: url('./style/font/bespokestencil-bold-webfont.woff2') format('woff2'),
+       url('./style/font/bespokestencil-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bespoke_stencilextrabold';
+  src: url('./style/font/bespokestencil-extrabold-webfont.woff2') format('woff2'),
+       url('./style/font/bespokestencil-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bespoke_stencilmedium';
+  src: url('./style/font/bespokestencil-medium-webfont.woff2') format('woff2'),
+       url('./style/font/bespokestencil-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   box-sizing: border-box;

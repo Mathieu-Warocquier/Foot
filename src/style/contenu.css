@@ -19,7 +19,7 @@
 }
 
 .titreContainer {
-  font-family: 'Ubuntu', 'Poppins', Courier;
+  font-family: 'bespoke_stencilbold', 'Ubuntu', 'Poppins', Courier;
   text-shadow: 2px 2px 2px #43885E;
 }
 
@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'Ubuntu', 'Poppins', Courier;;
 }
 
 

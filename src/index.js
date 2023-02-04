@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Ligues from './pages/Ligues';
 import reportWebVitals from './reportWebVitals';
 import Nav from './composants/nav';
+import Footer from "./composants/footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/ligues" element={<Ligues />} />
     </Routes>
+    <Footer />
   </BrowserRouter>
 );
 
