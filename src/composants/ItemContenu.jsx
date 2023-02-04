@@ -1,4 +1,4 @@
-function ItemContenu({logo, ordre, children}) {
+function ItemContenu({logo, ligue, ordre, children}) {
 
   if ((ordre) === "type2") {
     return (
@@ -9,6 +9,7 @@ function ItemContenu({logo, ordre, children}) {
             </div>
           </div>
           <div className='ContenuTexte secondTexte'>
+           <h1 className="titreContenu">{ligue}</h1>
             <p >{children}</p>
             <button className="BtnContenu secondeBtn">Par ici</button>
           </div>
@@ -24,6 +25,7 @@ function ItemContenu({logo, ordre, children}) {
             </div>
           </div>
           <div className='ContenuTexte'>
+            <h1 className="titreContenu">{ligue}</h1>
             <p >{children}</p>
             <button className="BtnContenu">Par ici</button>
           </div>

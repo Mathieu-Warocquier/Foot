@@ -49,11 +49,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Ubuntu', 'Poppins', Courier;;
+  font-family: 'Ubuntu', 'Poppins', Courier;
+}
+
+.titreContenu {
+  font-family: 'bespoke_stencilmedium', 'Ubuntu', 'Poppins', Courier;
+  font-size: 30px;
 }
 
 
 .BtnContenu {
+  color: #F1F1F1;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Ubuntu', 'Poppins', Courier;
   width: 100px;
-  cursor: pointer;
+  height: 35px;
+  background: none;
+  border: 2px solid #F1F1F1;
+  border-radius: 3px;
+  transition: all 300ms linear;
+}
+
+.BtnContenu:hover {
+  /* color: #43885E;
+  border: 3px solid #43885E ; */
+  /* background: #43885E; */
+  background-image: linear-gradient(45deg, #0f2e4c,#6dd06e);
 }

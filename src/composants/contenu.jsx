@@ -24,19 +24,19 @@ function ContenuHome() {
   return (
   <ContenuContainer>
     <h1 className='titreContainer'>Description</h1>
-      <ItemContenu logo={ligue1}>
+      <ItemContenu logo={ligue1} ligue={"Ligue 1"}>
         <HistoireLigue1 />
       </ItemContenu>
-      <ItemContenu logo={PL} ordre="type2">
+      <ItemContenu logo={PL} ordre="type2" ligue={"Premier League"}>
         <HistoirePL />
       </ItemContenu>
-      <ItemContenu logo={liga}>
+      <ItemContenu logo={liga} ligue={"Liga"}>
         <HistoireLiga />
       </ItemContenu>
-      <ItemContenu logo={serieA} ordre="type2">
+      <ItemContenu logo={serieA} ordre="type2" ligue={"Série A"}>
         <HistoireSerieA />
       </ItemContenu>
-      <ItemContenu logo={bundes}>
+      <ItemContenu logo={bundes} ligue={"bundesliga"}>
         <HistoireBundes />
       </ItemContenu>
   </ContenuContainer>
