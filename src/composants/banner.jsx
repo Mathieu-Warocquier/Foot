@@ -32,6 +32,7 @@ const BannerMsg = styled.p`
   width: 80%;
   font-size: 20px;
   font-weight: bold;
+  opacity: 0.8;
 `
 
 const BannerImg = styled.img`
@@ -41,7 +42,7 @@ const BannerImg = styled.img`
 
 function Banner() {
   return <BannerContainer>
-    <BannerTitle><Titre>Un titre sur le foot.</Titre>
+    <BannerTitle><Titre>Le monde du football à portée de clic.</Titre>
       <BannerMsg>"Les performances individuelles, ce n'est pas le plus important. On gagne et on perd en équipe." <br/>Zinedine Zidane</BannerMsg>
     </BannerTitle>
     <BannerImg src={messi} alt="photo de Messi" />
