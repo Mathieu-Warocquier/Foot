@@ -44,7 +44,7 @@ function Nav() {
   return <NavContainer>
     <Link to="/"><Logo src={ballon} alt="ballonLogo" /></Link>
     <OngletsContainer>
-      <BtnLink to="/" >Acceuil</BtnLink>
+      <BtnLink to="/" >Accueil</BtnLink>
       <BtnLink to="/ligues" >Ligues</BtnLink>
       <BtnLink to="/" >Equipes</BtnLink>
     </OngletsContainer>

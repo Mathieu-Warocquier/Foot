@@ -4,6 +4,8 @@ import styled from 'styled-components'
 const BannerContainer = styled.div`
   display: flex;
   /* background-color: black; */
+  position: relative;
+
 `
 
 const BannerTitle = styled.div`
@@ -37,6 +39,11 @@ const BannerMsg = styled.p`
 
 const BannerImg = styled.img`
   height: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
   /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) */
 `
 

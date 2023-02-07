@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import "../style/contenu.css"
 import ligue1 from '../assets/ligue1.png'
 import PL from '../assets/PL.png'
@@ -24,9 +25,12 @@ function ContenuHome() {
   return (
   <ContenuContainer>
     <h1 className='titreContainer'>Description</h1>
-      <ItemContenu logo={ligue1} ligue={"Ligue 1"}>
+
+    {/* <Link to="/ligue1"> */}
+      <ItemContenu to="/ligue1" logo={ligue1} ligue={"Ligue 1"}>
         <HistoireLigue1 />
       </ItemContenu>
+    {/* </Link> */}
       <ItemContenu logo={PL} ordre="type2" ligue={"Premier League"}>
         <HistoirePL />
       </ItemContenu>

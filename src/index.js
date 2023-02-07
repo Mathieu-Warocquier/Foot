@@ -6,6 +6,11 @@ import { Routes, Route} from 'react-router-dom'
 import './index.css';
 import Home from './pages/Home';
 import Ligues from './pages/Ligues';
+import Ligue1 from './pages/Ligue1';
+import PL from './pages/PL';
+import Liga from './pages/Liga';
+import SerieA from './pages/SerieA';
+import Bundes from './pages/Bundes';
 import reportWebVitals from './reportWebVitals';
 import Nav from './composants/nav';
 import Footer from "./composants/footer";
@@ -17,6 +22,12 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/ligues" element={<Ligues />} />
+      <Route path="/ligue1" element={<Ligue1 />} />
+      <Route path="/PL" element={<PL />} />
+      <Route path="/liga" element={<Liga />} />
+      <Route path="/liga" element={<Liga />} />
+      <Route path="/bundesliga" element={<Bundes />} />
+      <Route path="/seriea" element={<SerieA />} />
     </Routes>
     <Footer />
   </BrowserRouter>

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from 'react-router-dom'
 import ItemFiltre from "./ItemFiltre";
 import ligue1 from '../assets/ligue1.png'
 import PL from '../assets/PL.png'
@@ -13,7 +14,7 @@ const FiltreContainer = styled.div`
   align-items: center;
   /* background-color: black; */
   color: #F1F1F1;
-  padding: 63px 0;
+  padding: 64px 0;
 `
 
 const FiltreItems = styled.div`
@@ -22,14 +23,15 @@ const FiltreItems = styled.div`
   width: 90%;
 `
 
+
 function Filtre() {
   return <FiltreContainer>
           <FiltreItems>
-            <ItemFiltre logo={ligue1}>Ligue 1</ItemFiltre>
-            <ItemFiltre logo={PL}>Premier League</ItemFiltre>
-            <ItemFiltre logo={liga}>Liga</ItemFiltre>
-            <ItemFiltre logo={serieA}>Serie A</ItemFiltre>
-            <ItemFiltre logo={bundes}>Bundesliga</ItemFiltre>
+            <Link to="/ligue1"><ItemFiltre logo={ligue1}>Ligue 1</ItemFiltre></Link>
+            <Link to="/PL"><ItemFiltre logo={PL}>Premier League</ItemFiltre></Link>
+            <Link to="/liga"><ItemFiltre logo={liga}>Liga</ItemFiltre></Link>
+            <Link to="/seriea"><ItemFiltre logo={serieA}>Serie A</ItemFiltre></Link>
+            <Link to="/bundesliga"><ItemFiltre logo={bundes}>Bundesliga</ItemFiltre></Link>
           </FiltreItems>
         </FiltreContainer>
 }
