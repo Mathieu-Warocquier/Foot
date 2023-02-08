@@ -16,7 +16,6 @@ function Ligues({id}) {
     .then((response) => response.json())
     .then((result) => {setData(result.response)})
     .catch((error) => console.log(error))
-
     ;},[]);
 
     const CardContainer = styled.div`
