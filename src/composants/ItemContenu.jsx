@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function ItemContenu({logo, ligue, ordre, children}) {
@@ -14,6 +14,7 @@ function ItemContenu({logo, ligue, ordre, children}) {
           <div className='ContenuTexte secondTexte'>
            <h1 className="titreContenu">{ligue}</h1>
             <p >{children}</p>
+            <Link to="/ligue1" className="BtnContenu secondeBtn">Par ici</Link>
             <button className="BtnContenu secondeBtn">Par ici</button>
           </div>
     </div>

@@ -8,7 +8,7 @@ function Ligue1() {
   return (
     <div>
       <Ligues id={61}>Ligue 1</Ligues>
-      <Equipes></Equipes>
+      <Equipes id={61}></Equipes>
     </div>
   )
 }
