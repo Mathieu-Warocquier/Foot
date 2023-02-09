@@ -46,7 +46,7 @@ function Nav() {
     <OngletsContainer>
       <BtnLink to="/" >Accueil</BtnLink>
       <BtnLink to="/ligues" >Ligues</BtnLink>
-      <BtnLink to="/" >Equipes</BtnLink>
+      <BtnLink to="/effectif" >Equipes</BtnLink>
     </OngletsContainer>
   </NavContainer>
 }

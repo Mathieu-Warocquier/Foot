@@ -14,6 +14,7 @@ import Bundes from './pages/Bundes';
 import reportWebVitals from './reportWebVitals';
 import Nav from './composants/nav';
 import Footer from "./composants/footer";
+import Effectif from './pages/Effectif';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
       <Route path="/liga" element={<Liga />} />
       <Route path="/bundesliga" element={<Bundes />} />
       <Route path="/seriea" element={<SerieA />} />
+      <Route path="/effectif" element={<Effectif />} />
     </Routes>
     <Footer />
   </BrowserRouter>

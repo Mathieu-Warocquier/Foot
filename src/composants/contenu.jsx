@@ -27,20 +27,20 @@ function ContenuHome() {
     <h1 className='titreContainer'>Description</h1>
 
     {/* <Link to="/ligue1"> */}
-      <ItemContenu to="/ligue1" logo={ligue1} ligue={"Ligue 1"}>
+      <ItemContenu chemin="ligue1" logo={ligue1} ligue={"Ligue 1"}>
         <HistoireLigue1 />
       </ItemContenu>
     {/* </Link> */}
-      <ItemContenu logo={PL} ordre="type2" ligue={"Premier League"}>
+      <ItemContenu chemin="PL" logo={PL} ordre="type2" ligue={"Premier League"}>
         <HistoirePL />
       </ItemContenu>
-      <ItemContenu logo={liga} ligue={"Liga"}>
+      <ItemContenu chemin="liga" logo={liga} ligue={"Liga"}>
         <HistoireLiga />
       </ItemContenu>
-      <ItemContenu logo={serieA} ordre="type2" ligue={"Série A"}>
+      <ItemContenu chemin="seriea" logo={serieA} ordre="type2" ligue={"Série A"}>
         <HistoireSerieA />
       </ItemContenu>
-      <ItemContenu logo={bundes} ligue={"bundesliga"}>
+      <ItemContenu chemin="bundesliga" logo={bundes} ligue={"bundesliga"}>
         <HistoireBundes />
       </ItemContenu>
   </ContenuContainer>
