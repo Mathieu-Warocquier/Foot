@@ -1,3 +1,4 @@
+import "../style/nav.css"
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import ballon from '../assets/ballon.png'
@@ -45,7 +46,15 @@ function Nav() {
     <Link to="/"><Logo src={ballon} alt="ballonLogo" /></Link>
     <OngletsContainer>
       <BtnLink to="/" >Accueil</BtnLink>
-      <BtnLink to="/ligues" >Ligues</BtnLink>
+      <BtnLink to="/ligues" >Ligues
+
+        {/* <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+        </ul> */}
+
+
+      </BtnLink>
       <BtnLink to="/effectif" >Equipes</BtnLink>
     </OngletsContainer>
   </NavContainer>
