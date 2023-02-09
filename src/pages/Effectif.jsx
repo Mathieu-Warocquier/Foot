@@ -34,7 +34,7 @@ function Effectif() {
       // return <EffectifPlayers>
       //   Effectif
       //   {results.map((result, index) => {
-      //     <p>{result[0].team.name}</p>
+      //     <p>{result.team.name}</p>
       //   })}
       // </EffectifPlayers>
 
