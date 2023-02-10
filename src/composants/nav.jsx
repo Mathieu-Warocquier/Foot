@@ -1,6 +1,6 @@
 import "../style/nav.css"
 import { Link } from 'react-router-dom'
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components'
 import ballon from '../assets/ballon.png'
 
@@ -47,26 +47,35 @@ function Nav() {
     const Chemins = ["ligue1", "PL", "liga", "seriea", "bundesliga"]
 
     const [open, setOpen] = useState(false)
-    const menuRef = useRef();
-    const imgRef = useRef();
+
+    useEffect(() => {
+      let handler = (e) => {
+        if(!menuRef.current.contains(e.target)) {
+          setOpen(false);
+        };
+      };
+      document.addEventListener("mousedown", handler)
+    })
+    let menuRef = useRef();
+    // const imgRef = useRef();
 
 
-    window.addEventListener('click', (e) => {
-      console.log(e.target !== menuRef.current && e.target !== imgRef.current)
+    // window.addEventListener('click', (e) => {
+    //   console.log(e.target !== menuRef.current && e.target !== imgRef.current)
       // {
       //   setOpen(false);
       // }
-    });
+    // });
 
   return <NavContainer>
     <Link to="/"><Logo src={ballon} alt="ballonLogo" /></Link>
     <OngletsContainer>
       <BtnLink to="/" >Accueil</BtnLink>
-      <div className="btnNav">
-        <p className="titreNav" ref={imgRef} onClick={() => setOpen(!open)}>Ligues</p>
+      <div className="btnNav" ref={menuRef}>
+        <p className="titreNav" onClick={() => setOpen(!open)}>Ligues</p>
         {open &&
         <div>
-          <ul className="dropdownMenu" ref={menuRef}>
+          <ul className={"dropdownMenu"}>
               <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[0]}`} >{Ligues[0]}</Link></li>
               <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[1]}`} >{Ligues[1]}</Link></li>
               <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[2]}`} >{Ligues[2]}</Link></li>
