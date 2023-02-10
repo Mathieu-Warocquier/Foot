@@ -76,11 +76,11 @@ function Nav() {
         {open &&
         <div>
           <ul className={"dropdownMenu"}>
-              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[0]}`} >{Ligues[0]}</Link></li>
-              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[1]}`} >{Ligues[1]}</Link></li>
-              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[2]}`} >{Ligues[2]}</Link></li>
-              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[3]}`} >{Ligues[3]}</Link></li>
-              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[4]}`} >{Ligues[4]}</Link></li>
+              <Link to={`/${Chemins[0]}`} className="dropdownListe">{Ligues[0]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/${Chemins[1]}`} className="dropdownListe">{Ligues[1]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/${Chemins[2]}`} className="dropdownListe">{Ligues[2]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/${Chemins[3]}`} className="dropdownListe">{Ligues[3]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/${Chemins[4]}`} className="dropdownListe">{Ligues[4]}<li onClick={() => setOpen(false)}></li></Link>
           </ul>
         </div>
         }
