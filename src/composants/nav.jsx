@@ -1,5 +1,6 @@
 import "../style/nav.css"
 import { Link } from 'react-router-dom'
+import { useState, useRef } from 'react';
 import styled from 'styled-components'
 import ballon from '../assets/ballon.png'
 
@@ -42,22 +43,49 @@ function Nav() {
     }
     `
 
+    const Ligues = ["Ligue 1", "Premier League", "Liga" , "Serie A","Bundesliga"]
+    const Chemins = ["ligue1", "PL", "liga", "seriea", "bundesliga"]
+
+    const [open, setOpen] = useState(false)
+    const menuRef = useRef();
+    const imgRef = useRef();
+
+
+    window.addEventListener('click', (e) => {
+      console.log(e.target !== menuRef.current && e.target !== imgRef.current)
+      // {
+      //   setOpen(false);
+      // }
+    });
+
   return <NavContainer>
     <Link to="/"><Logo src={ballon} alt="ballonLogo" /></Link>
     <OngletsContainer>
       <BtnLink to="/" >Accueil</BtnLink>
-      <BtnLink to="/ligues" >Ligues
-
-        {/* <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-        </ul> */}
-
-
-      </BtnLink>
+      <div className="btnNav">
+        <p className="titreNav" ref={imgRef} onClick={() => setOpen(!open)}>Ligues</p>
+        {open &&
+        <div>
+          <ul className="dropdownMenu" ref={menuRef}>
+              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[0]}`} >{Ligues[0]}</Link></li>
+              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[1]}`} >{Ligues[1]}</Link></li>
+              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[2]}`} >{Ligues[2]}</Link></li>
+              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[3]}`} >{Ligues[3]}</Link></li>
+              <li className="dropdownListe" onClick={() => setOpen(false)}><Link to={`/${Chemins[4]}`} >{Ligues[4]}</Link></li>
+          </ul>
+        </div>
+        }
+      </div>
       <BtnLink to="/effectif" >Equipes</BtnLink>
     </OngletsContainer>
   </NavContainer>
 }
 
 export default Nav
+
+
+//  chemin="ligue1"
+//  chemin="PL"
+//  chemin="liga"
+//  chemin="seriea"
+//  chemin="bundesliga"
