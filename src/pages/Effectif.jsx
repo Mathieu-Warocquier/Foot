@@ -7,23 +7,28 @@ function Effectif() {
   // const [results, setData] = useState([]);
   const [joueurs, setJoueurs] = useState([]);
 
+
+  //
     useEffect(() => {
-      fetch(`https://v3.football.api-sports.io/players/squads?team=81`, {
+      fetch(`https://v3.football.api-sports.io/players?league=61&season=2022&team=81`, {
+        // fetch(`https://v3.football.api-sports.io/players/squads?team=81`, {
         "method": "GET",
         "headers": {
           "x-rapidapi-host": "v3.football.api-sports.io",
           "x-rapidapi-key": "5b217cb77b612be62f69b774f415a79c"
         }
       })
-        .then((response) => console.log(response.json()))
-        .then((data) => {setJoueurs(data.response);})
-        .catch((error) => {console.log(error);
-        });
+        .then((response) => { return response.json()})
+        .then((data) => {setJoueurs(data.response)})
+        // .catch((error) => {console.log(error);
+        // });
     }, []);
 
-
+    // {setJoueurs(data.response);})
 
     console.log(joueurs)
+
+    // Response | GET : https://v3.football.api-sports.io/players?league=61&season=2022&team=81
 
 
 
@@ -70,14 +75,14 @@ function Effectif() {
       return <EffectifPlayers>
         Effectif
 
-        {/* <div>
+        <div>
     <h1>Joueurs de l'équipe de Marseille</h1>
      <ul>
         {joueurs.map((joueur) => (
-          <li key={joueur.idPlayer}>{joueur.strPlayer}</li>
+          <li >{joueur.player.name}</li>
         ))}
       </ul>
-    </div> */}
+    </div>
 
 
 
