@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 
 function Effectif() {
-  const [results, setData] = useState([]);
+  // const [results, setData] = useState([]);
+  const [joueurs, setJoueurs] = useState([]);
 
     useEffect(() => {
       fetch(`https://v3.football.api-sports.io/players/squads?team=81`, {
@@ -14,10 +15,23 @@ function Effectif() {
           "x-rapidapi-key": "5b217cb77b612be62f69b774f415a79c"
         }
       })
-      .then((response) => response.json())
-      .then((result) => {setData(result.response)})
-      .catch((error) => console.log(error))
-      },[]);
+        .then((response) => console.log(response.json()))
+        .then((data) => {setJoueurs(data.response);})
+        .catch((error) => {console.log(error);
+        });
+    }, []);
+
+
+
+    console.log(joueurs)
+
+
+
+
+      // .then((response) => response.json())
+      // .then((result) => {setData(result.response)})
+      // .catch((error) => console.log(error))
+      // },[]);
 
 
       // console.log(typeof(results[0]))
@@ -34,7 +48,7 @@ function Effectif() {
       // console.log(effectifs)
       // console.log(typeof(effectifs))
 
-      console.log(results[0])
+      // console.log(results[0])
 
 
       // this.state.objet.a
@@ -55,6 +69,19 @@ function Effectif() {
 
       return <EffectifPlayers>
         Effectif
+
+        {/* <div>
+    <h1>Joueurs de l'équipe de Marseille</h1>
+     <ul>
+        {joueurs.map((joueur) => (
+          <li key={joueur.idPlayer}>{joueur.strPlayer}</li>
+        ))}
+      </ul>
+    </div> */}
+
+
+
+
 
         {/* <div>{results[0].team.name}</div> */}
         {/* {results.map((result, index) => {
