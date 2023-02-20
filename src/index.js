@@ -29,7 +29,7 @@ root.render(
       <Route path="/liga" element={<Liga />} />
       <Route path="/bundesliga" element={<Bundes />} />
       <Route path="/seriea" element={<SerieA />} />
-      <Route path="/effectif" element={<Effectif />} />
+      <Route path="/Effectif" element={<Effectif />} />
     </Routes>
     <Footer />
   </BrowserRouter>

@@ -3,14 +3,14 @@ import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 
-function Effectif() {
+function Effectif({idTeam}) {
   // const [results, setData] = useState([]);
   const [joueurs, setJoueurs] = useState([]);
 
 
   //
     useEffect(() => {
-      fetch(`https://v3.football.api-sports.io/players?league=61&season=2022&team=81`, {
+      fetch(`https://v3.football.api-sports.io/players?league=61&season=2022&team=${idTeam}`, {
         // fetch(`https://v3.football.api-sports.io/players/squads?team=81`, {
         "method": "GET",
         "headers": {
@@ -20,68 +20,30 @@ function Effectif() {
       })
         .then((response) => { return response.json()})
         .then((data) => {setJoueurs(data.response)})
-        // .catch((error) => {console.log(error);
-        // });
     }, []);
 
-    // {setJoueurs(data.response);})
-
     console.log(joueurs)
+    console.log(idTeam)
 
-    // Response | GET : https://v3.football.api-sports.io/players?league=61&season=2022&team=81
-
-
-
-
-      // .then((response) => response.json())
-      // .then((result) => {setData(result.response)})
-      // .catch((error) => console.log(error))
-      // },[]);
-
-
-      // console.log(typeof(results[0]))
-
-      // const arrayIdTeams = results[0]
-      // console.log(results)
-      // console.log(results[0])
-      // console.log(arrayIdTeams["0"])
+    // const stat = joueurs.statistics.team
+    // console.log(stat.id)
 
       const EffectifPlayers = styled.div`
       color: white;
       `
-      // const effectifs = results[0]
-      // console.log(effectifs)
-      // console.log(typeof(effectifs))
-
-      // console.log(results[0])
-
-
-      // this.state.objet.a
-      // const effect = effectifs.team
-      // console.log(effect)
-
-
-
-          // this.state = results;
-
-
-          // console.log(this.state)
-        // render() {
-        //   return <div>{this.state.objet.a}</div>;
-        // }
-
-
 
       return <EffectifPlayers>
         Effectif
 
         <div>
     <h1>Joueurs de l'équipe de Marseille</h1>
-     <ul>
         {joueurs.map((joueur) => (
+     <ul>
           <li >{joueur.player.name}</li>
-        ))}
+          <li >{joueur.player.age} ans</li>
+          {/* <li >{joueur.statistics.team}</li> */}
       </ul>
+        ))}
     </div>
 
 

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 
@@ -25,13 +26,13 @@ function Equipes({id}) {
     color: white;
   `
 
-
-
     return <EquipeContainer>
        {results.map((team, index) => (
             <div>
+              <Link to="/Effectif" idTeam={team.team.id}>
               <h1>{team.team.id}</h1>
               <h1>{team.team.name}</h1>
+              </Link>
               <p>{team.team.code}</p>
               <p>{team.team.founded}</p>
               <p>{team.team.logo}</p>
