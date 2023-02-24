@@ -26,10 +26,15 @@ function Equipes({id}) {
     color: white;
   `
 
+// const location = useLocation();
+// console.log(location)
+// const idTeam = location.team.id;
+
     return <EquipeContainer>
        {results.map((team, index) => (
             <div>
               <Link to="/Effectif" idTeam={team.team.id}>
+                {/* <p>id : {idTeam}</p> */}
               <h1>{team.team.id}</h1>
               <h1>{team.team.name}</h1>
               </Link>
