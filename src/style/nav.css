@@ -1,4 +1,5 @@
 
+
 .titreNav {
   color: #F1F1F1;
   font-family: 'Ubuntu', 'Poppins', Courier;
@@ -9,6 +10,7 @@
   cursor: pointer;
   position: relative;
   transition: all 200ms linear;
+  margin: 0;
 }
 
 .titreNav:hover {

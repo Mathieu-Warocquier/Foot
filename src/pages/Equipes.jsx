@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 
-function Equipes({id}) {
+function Equipes({id}, props) {
   const [results, setData] = useState([]);
 
   const aujd = new Date();
@@ -33,7 +33,7 @@ function Equipes({id}) {
     return <EquipeContainer>
        {results.map((team, index) => (
             <div>
-              <Link to="/Effectif" idTeam={team.team.id}>
+              <Link to={`/Effectif/${team.team.id}`} idTeam={team.team.id}>
                 {/* <p>id : {idTeam}</p> */}
               <h1>{team.team.id}</h1>
               <h1>{team.team.name}</h1>

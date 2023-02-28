@@ -1,16 +1,22 @@
-import { type } from '@testing-library/user-event/dist/type';
+// import { type } from '@testing-library/user-event/dist/type';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 
-function Effectif({idTeam}) {
+function Effectif({idTeam}, props) {
   // const [results, setData] = useState([]);
   const [joueurs, setJoueurs] = useState([]);
+
+  let {id} = useParams();
+  console.log(id)
+
+  // const idEquipe = props.location.state.idTeam;
 
 
   //
     useEffect(() => {
-      fetch(`https://v3.football.api-sports.io/players?league=61&season=2022&team=${idTeam}`, {
+      fetch(`https://v3.football.api-sports.io/players?league=61&season=2022&team=${id}`, {
         // fetch(`https://v3.football.api-sports.io/players/squads?team=81`, {
         "method": "GET",
         "headers": {
@@ -22,9 +28,6 @@ function Effectif({idTeam}) {
         .then((data) => {setJoueurs(data.response)})
     }, []);
 
-    console.log(joueurs)
-    console.log(idTeam)
-
     // const stat = joueurs.statistics.team
     // console.log(stat.id)
 
@@ -32,28 +35,18 @@ function Effectif({idTeam}) {
       color: white;
       `
 
+
       return <EffectifPlayers>
-        Effectif
-
         <div>
-    <h1>Joueurs de l'équipe de Marseille</h1>
-        {joueurs.map((joueur) => (
-     <ul>
-          <li >{joueur.player.name}</li>
-          <li >{joueur.player.age} ans</li>
-          {/* <li >{joueur.statistics.team}</li> */}
-      </ul>
-        ))}
-    </div>
-
-
-
-
-
-        {/* <div>{results[0].team.name}</div> */}
-        {/* {results.map((result, index) => {
-          <p>{result.team.name}</p>
-        })} */}
+          <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1>
+          <h1>logo: {joueurs[0].statistics[0].team.logo}</h1>
+          {joueurs.map((joueur) => (
+            <ul>
+              <li >{joueur.player.name}</li>
+              <li >{joueur.player.age} ans</li>
+            </ul>
+          ))}
+        </div>
       </EffectifPlayers>
 
 }
