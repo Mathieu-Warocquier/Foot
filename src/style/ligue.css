@@ -1,0 +1,15 @@
+.ligueContenu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pays {
+  font-family: 'Ubuntu', 'Poppins', Courier;
+  font-weight: bold;
+}
+
+.pays > img {
+  width: 25px;
+}

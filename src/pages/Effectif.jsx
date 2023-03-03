@@ -38,8 +38,7 @@ function Effectif({idTeam}, props) {
 
       return <EffectifPlayers>
         <div>
-          <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1>
-          <h1>logo: {joueurs[0].statistics[0].team.logo}</h1>
+          {/* <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1> */}
           {joueurs.map((joueur) => (
             <ul>
               <li >{joueur.player.name}</li>

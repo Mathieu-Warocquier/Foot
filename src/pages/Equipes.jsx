@@ -23,8 +23,12 @@ function Equipes({id}, props) {
     },[]);
 
     const EquipeContainer = styled.div`
-    color: white;
-  `
+      color: white;
+      border: 2px solid white;
+      padding: 25px;
+      margin: 30px;
+      border-radius: 10px;
+    `
 
 // const location = useLocation();
 // console.log(location)
@@ -40,9 +44,11 @@ function Equipes({id}, props) {
               </Link>
               <p>{team.team.code}</p>
               <p>{team.team.founded}</p>
-              <p>{team.team.logo}</p>
+              <img src={team.team.logo} alt="Logo club" />
+              {/* <p>{team.team.logo}</p> */}
               <p>{team.venue.city}</p>
               <p>{team.venue.name}</p>
+              <img  src={team.venue.image} alt="" />
               <p>{team.venue.image}</p>
             </div>
            ))}
