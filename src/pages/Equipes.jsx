@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
+import "../style/Equipe.css"
 
 
 function Equipes({id}, props) {
@@ -23,11 +24,15 @@ function Equipes({id}, props) {
     },[]);
 
     const EquipeContainer = styled.div`
-      color: white;
-      border: 2px solid white;
+      color: #f1f1f1;
+      display: flex;
+      flex-flow: wrap;
+      font-family: 'Ubuntu', 'Poppins', Courier;
+
+      /* border: 2px solid white;
       padding: 25px;
       margin: 30px;
-      border-radius: 10px;
+      border-radius: 10px; */
     `
 
 // const location = useLocation();
@@ -36,20 +41,26 @@ function Equipes({id}, props) {
 
     return <EquipeContainer>
        {results.map((team, index) => (
-            <div>
-              <Link to={`/Effectif/${team.team.id}`} idTeam={team.team.id}>
-                {/* <p>id : {idTeam}</p> */}
-              <h1>{team.team.id}</h1>
-              <h1>{team.team.name}</h1>
-              </Link>
-              <p>{team.team.code}</p>
-              <p>{team.team.founded}</p>
-              <img src={team.team.logo} alt="Logo club" />
-              {/* <p>{team.team.logo}</p> */}
-              <p>{team.venue.city}</p>
-              <p>{team.venue.name}</p>
-              <img  src={team.venue.image} alt="" />
-              <p>{team.venue.image}</p>
+            <div className='TeamContenu'>
+              <div className="TeamHead">
+                <Link to={`/Effectif/${team.team.id}`} idTeam={team.team.id} className='TeamLink'>
+                  {/* <p>id : {idTeam}</p> */}
+                {/* <h1>{team.team.id}</h1> */}
+                {/* <div className='TeamLink'> */}
+                  <h1 className='Link'>{team.team.name}</h1>
+                  <img src={team.team.logo} alt="Logo club" />
+                {/* </div> */}
+                </Link>
+                {/* <p>{team.team.code}</p> */}
+                <div className="TeamInfo">
+                  <p>Année : {team.team.founded}</p>
+                  <p>Ville : {team.venue.city}</p>
+                </div>
+              </div>
+              <div className="TeamStade">
+                <p>Stade : {team.venue.name}</p>
+                <img src={team.venue.image} alt="stade" />
+              </div>
             </div>
            ))}
     </EquipeContainer>

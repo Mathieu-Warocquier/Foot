@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import Equipes from './Equipes';
 
 
 function Effectif({idTeam}, props) {
@@ -37,6 +38,7 @@ function Effectif({idTeam}, props) {
 
 
       return <EffectifPlayers>
+
         <div>
           {/* <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1> */}
           {joueurs.map((joueur) => (
