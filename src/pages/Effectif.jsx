@@ -1,8 +1,8 @@
 // import { type } from '@testing-library/user-event/dist/type';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import Equipes from './Equipes';
+// import Equipes from './Equipes';
 
 
 function Effectif({idTeam}, props) {
@@ -12,12 +12,17 @@ function Effectif({idTeam}, props) {
   let {id} = useParams();
   console.log(id)
 
+  const location = useLocation();
+  console.log(location)
+
+
+
   // const idEquipe = props.location.state.idTeam;
 
 
   //
     useEffect(() => {
-      fetch(`https://v3.football.api-sports.io/players?league=61&season=2022&team=${id}`, {
+      fetch(`https://v3.football.api-sports.io/players?league=140&season=2022&team=${id}`, {
         // fetch(`https://v3.football.api-sports.io/players/squads?team=81`, {
         "method": "GET",
         "headers": {
@@ -40,6 +45,7 @@ function Effectif({idTeam}, props) {
       return <EffectifPlayers>
 
         <div>
+          <h1>lalalala: {location.state?.ligue}</h1>
           {/* <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1> */}
           {joueurs.map((joueur) => (
             <ul>

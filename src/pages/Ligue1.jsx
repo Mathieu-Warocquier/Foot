@@ -12,7 +12,6 @@ function Ligue1() {
       <Ligues id={61}>Ligue 1</Ligues>
       {/* <ListeTeams id={61}></ListeTeams> */}
       <Equipes id={61}></Equipes>
-      <Effectif></Effectif>
     </div>
   )
 }
