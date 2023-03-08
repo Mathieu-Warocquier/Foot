@@ -22,12 +22,15 @@ const ContenuContainer = styled.div`
 `
 
 function ContenuHome() {
+
+  const Chemins = [61, 39, 140, 135, 78]
+
   return (
   <ContenuContainer>
     <h1 className='titreContainer'>Description</h1>
 
     {/* <Link to="/ligue1"> */}
-      <ItemContenu chemin="ligue1" logo={ligue1} ligue={"Ligue 1"}>
+      <ItemContenu chemin="61" logo={ligue1} ligue={"Ligue 1"}>
         <HistoireLigue1 />
       </ItemContenu>
     {/* </Link> */}
