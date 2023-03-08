@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route} from 'react-router-dom'
 import './index.css';
 import Home from './pages/Home';
+import Ligue from './pages/Ligue';
 import Ligues from './pages/Ligues';
 import Ligue1 from './pages/Ligue1';
 import PL from './pages/PL';
@@ -22,6 +23,7 @@ root.render(
     <Nav />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/ligue/:idLigue" element={<Ligue />} />
       <Route path="/ligues" element={<Ligues />} />
       <Route path="/ligue1" element={<Ligue1 />} />
       <Route path="/PL" element={<PL />} />
@@ -29,7 +31,7 @@ root.render(
       <Route path="/liga" element={<Liga />} />
       <Route path="/bundesliga" element={<Bundes />} />
       <Route path="/seriea" element={<SerieA />} />
-      <Route path="/Effectif/:id" element={<Effectif />} />
+      <Route path="/ligue/:idLigue/Effectif/:id" element={<Effectif />} />
     </Routes>
     <Footer />
   </BrowserRouter>

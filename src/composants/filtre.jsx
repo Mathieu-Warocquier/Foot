@@ -22,16 +22,17 @@ const FiltreItems = styled.div`
   justify-content: space-between;
   width: 90%;
 `
+const Chemins = [61, 39, 140, 135, 78]
 
 
 function Filtre() {
   return <FiltreContainer>
           <FiltreItems>
-            <Link to="/ligue1"><ItemFiltre logo={ligue1}>Ligue 1</ItemFiltre></Link>
-            <Link to="/PL"><ItemFiltre logo={PL}>Premier League</ItemFiltre></Link>
-            <Link to="/liga"><ItemFiltre logo={liga}>Liga</ItemFiltre></Link>
-            <Link to="/seriea"><ItemFiltre logo={serieA}>Serie A</ItemFiltre></Link>
-            <Link to="/bundesliga"><ItemFiltre logo={bundes}>Bundesliga</ItemFiltre></Link>
+            <Link to={`/ligue/${Chemins[0]}`}><ItemFiltre logo={ligue1}>Ligue 1</ItemFiltre></Link>
+            <Link to={`/ligue/${Chemins[1]}`}><ItemFiltre logo={PL}>Premier League</ItemFiltre></Link>
+            <Link to={`/ligue/${Chemins[2]}`}><ItemFiltre logo={liga}>Liga</ItemFiltre></Link>
+            <Link to={`/ligue/${Chemins[3]}`}><ItemFiltre logo={serieA}>Serie A</ItemFiltre></Link>
+            <Link to={`/ligue/${Chemins[4]}`}><ItemFiltre logo={bundes}>Bundesliga</ItemFiltre></Link>
           </FiltreItems>
         </FiltreContainer>
 }

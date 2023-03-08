@@ -44,7 +44,7 @@ function Nav() {
     `
 
     const Ligues = ["Ligue 1", "Premier League", "Liga" , "Serie A","Bundesliga"]
-    const Chemins = ["ligue1", "PL", "liga", "seriea", "bundesliga"]
+    const Chemins = [61, 39, 140, 135, 78]
 
     const [open, setOpen] = useState(false)
 
@@ -76,11 +76,11 @@ function Nav() {
         {open &&
         <div>
           <ul className={"dropdownMenu"}>
-              <Link to={`/${Chemins[0]}`} className="dropdownListe">{Ligues[0]}<li onClick={() => setOpen(false)}></li></Link>
-              <Link to={`/${Chemins[1]}`} className="dropdownListe">{Ligues[1]}<li onClick={() => setOpen(false)}></li></Link>
-              <Link to={`/${Chemins[2]}`} className="dropdownListe">{Ligues[2]}<li onClick={() => setOpen(false)}></li></Link>
-              <Link to={`/${Chemins[3]}`} className="dropdownListe">{Ligues[3]}<li onClick={() => setOpen(false)}></li></Link>
-              <Link to={`/${Chemins[4]}`} className="dropdownListe">{Ligues[4]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/ligue/${Chemins[0]}`} className="dropdownListe">{Ligues[0]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/ligue/${Chemins[1]}`} className="dropdownListe">{Ligues[1]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/ligue/${Chemins[2]}`} className="dropdownListe">{Ligues[2]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/ligue/${Chemins[3]}`} className="dropdownListe">{Ligues[3]}<li onClick={() => setOpen(false)}></li></Link>
+              <Link to={`/ligue/${Chemins[4]}`} className="dropdownListe">{Ligues[4]}<li onClick={() => setOpen(false)}></li></Link>
           </ul>
         </div>
         }

@@ -41,14 +41,14 @@ function Equipes({id}, props) {
 // console.log(location)
 // const idTeam = location.team.id;
 
-    const info= "mon infoà transmettre";
+
 
     return <EquipeContainer>
        {results.map((team, index) => (
             <div className='TeamContenu'>
               <div className="TeamHead">
                 <Link to=
-                {{ pathname: `/Effectif/${team.team.id}`, state: `${info}` }}
+                {{ pathname: `./Effectif/${team.team.id}` }}
 
 
 
