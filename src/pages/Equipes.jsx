@@ -49,7 +49,10 @@ function Equipes({id}, props) {
             <div className='TeamContenu'>
               {/* <div className="TeamHead"> */}
                 <Link to= {{ pathname: `./Effectif/${team.team.id}` }} className='TeamLink'>
+                  <div className="imgTeam">
+
                   <img src={team.team.logo} alt="Logo club" />
+                  </div>
                   {/* <p>id : {idTeam}</p> */}
                 {/* <h1>{team.team.id}</h1> */}
                 {/* <div className='TeamLink'> */}

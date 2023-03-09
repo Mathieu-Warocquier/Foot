@@ -1,5 +1,5 @@
 .TeamContenu {
-  border: 2px solid white;
+  border: 2px solid #F1F1F1;
   /* padding: 25px; */
   margin: 30px;
   border-radius: 10px;
@@ -15,6 +15,10 @@
   transition: all 300ms linear;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .TeamLink:hover {
@@ -23,26 +27,40 @@
   color: rgba(255, 255, 255, 0.512);
 }
 
+.imgTeam {
+  background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    /* margin: 0; */
+    position: relative;
+    top: -25px;
+    z-index: -5;
+}
+/*
 .TeamHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-}
+} */
 
-.TeamInfo {
+/* .TeamInfo {
 
-}
+} */
 
-.TeamStade {
+/* .TeamStade {
   display: flex;
   flex-direction: column;
   /* justify-content: end; */
-  align-items: center;
-}
+  /* align-items: center;
+} */
 
-.TeamStade > img {
+/* .TeamStade > img {
   width: 250px;
   text-align: center;
   border-radius: 10px;
-}
+} */
