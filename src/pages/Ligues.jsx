@@ -35,6 +35,7 @@ function Ligues({id}) {
       border-radius: 10px;
       display: flex;
       font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
+      z-index: 5;
     `
 
   return (<CardContainer>

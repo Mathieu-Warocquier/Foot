@@ -2,16 +2,19 @@
   /* padding: 25px; */
   margin: 30px;
   width: 25%;
+  height: 350px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .TeamLink {
-  border: 2px solid #F1F1F1;
+  border: 4px solid #F1F1F1;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
   color: #f1f1f1;
+  /* position: relative; */
   transition: all 300ms linear;
   width: 100%;
   height: 100%;
@@ -24,8 +27,8 @@
 .TeamLink:hover {
   /* background-color: rgba(255, 255, 255, 0.104); */
   border-radius: 10px;
-  color: #6dd06f4b;
-  border: 2px solid #6dd06f4b;
+  color: #6dd06e;
+  border: 4px solid #6dd06e;
 }
 
 .imgTeam {
@@ -37,9 +40,9 @@
     height: 210px;
     width: 210px;
     /* margin: 0; */
-    position: relative;
+    position: absolute;
     top: -25px;
-    z-index: -2;
+    z-index: 2;
 }
 /*
 .TeamHead {
@@ -49,9 +52,10 @@
   flex-direction: column;
 } */
 
-/* .TeamInfo {
-
-} */
+.TeamInfo {
+  position: absolute;
+  bottom: 25px;
+}
 
 /* .TeamStade {
   display: flex;
