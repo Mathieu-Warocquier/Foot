@@ -1,14 +1,14 @@
 .TeamContenu {
-  border: 2px solid #F1F1F1;
   /* padding: 25px; */
   margin: 30px;
-  border-radius: 10px;
   width: 25%;
   display: flex;
   justify-content: center;
 }
 
 .TeamLink {
+  border: 2px solid #F1F1F1;
+  border-radius: 10px;
   text-align: center;
   text-decoration: none;
   color: #f1f1f1;
@@ -22,9 +22,10 @@
 }
 
 .TeamLink:hover {
-  background-color: rgba(255, 255, 255, 0.104);
+  /* background-color: rgba(255, 255, 255, 0.104); */
   border-radius: 10px;
-  color: rgba(255, 255, 255, 0.512);
+  color: #6dd06f4b;
+  border: 2px solid #6dd06f4b;
 }
 
 .imgTeam {
@@ -33,12 +34,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
+    height: 210px;
+    width: 210px;
     /* margin: 0; */
     position: relative;
     top: -25px;
-    z-index: -5;
+    z-index: -2;
 }
 /*
 .TeamHead {

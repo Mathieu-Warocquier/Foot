@@ -6,17 +6,21 @@
 }
 
 .pays {
-  font-family: 'Ubuntu', 'Poppins', Courier;
-  font-weight: bold;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .pays > img {
-  width: 25px;
+  width: 90px;
 }
 
 .borderImg {
   background-color: #F1F1F1;
-  backdrop-filter: blur(20px);
+  /* background: black; */
+  border: 4px solid #6dd06f4b;
+  /* backdrop-filter: blur(20px); */
   width: 200px;
   height: 200px;
   display: flex;

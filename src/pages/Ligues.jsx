@@ -30,7 +30,7 @@ function Ligues({id}) {
       /* position: relative; */
       top: 0px;
       margin-top: 100px;
-      padding: 25px;
+      padding: 25px 75px;
       margin: 30px;
       border-radius: 10px;
       display: flex;
@@ -40,13 +40,13 @@ function Ligues({id}) {
   return (<CardContainer>
           {results.map((ligue, index) => (
             <div className='ligueContenu'>
-              <h1>{ligue.league.name}</h1>
               {/* <p>{ligue.league.type}</p> */}
-              <div className="borderImg">
-                <img src={ligue.league.logo} alt="Logo ligue 1" />
-              </div>
+                <div className="borderImg">
+                  <img src={ligue.league.logo} alt="Logo ligue 1" />
+                </div>
               <div className='pays'>
-                <p>{ligue.country.name}</p>
+                  <h1>{ligue.league.name}</h1>
+                {/* <p>{ligue.country.name}</p> */}
                 {/* <p>{ligue.country.code}</p> */}
                 <img src={ligue.country.flag} alt="drapeau France" className='LigueImg' />
               </div>
