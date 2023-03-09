@@ -20,8 +20,16 @@ function Ligues({id}) {
     ;},[]);
 
     const CardContainer = styled.div`
-      color: white;
-      border: 2px solid white;
+      /* color: white;
+      border: 2px solid white; */
+      color: black;
+      background-color: #f1f1f15f;
+      backdrop-filter: blur(20px);
+      height: 230px;
+      position: sticky;
+      /* position: relative; */
+      top: 0px;
+      margin-top: 100px;
       padding: 25px;
       margin: 30px;
       border-radius: 10px;
@@ -34,7 +42,9 @@ function Ligues({id}) {
             <div className='ligueContenu'>
               <h1>{ligue.league.name}</h1>
               {/* <p>{ligue.league.type}</p> */}
-              <img src={ligue.league.logo} alt="Logo ligue 1" />
+              <div className="borderImg">
+                <img src={ligue.league.logo} alt="Logo ligue 1" />
+              </div>
               <div className='pays'>
                 <p>{ligue.country.name}</p>
                 {/* <p>{ligue.country.code}</p> */}
