@@ -15,8 +15,8 @@ function Effectif({idTeam}, props) {
 
   let {idLigue} = useParams();
   let {id} = useParams();
-  console.log(idLigue)
-  console.log(id)
+  // console.log(idLigue)
+  // console.log(id)
 
 
 
@@ -45,15 +45,21 @@ function Effectif({idTeam}, props) {
       `
 
 
+
       return <EffectifPlayers>
         <div>
           {/* <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1> */}
           {/* <img src={joueurs[0].statistics[0].team.logo} alt="" /> */}
-          {joueurs.map((joueur) => (
-            <ul>
-              <li >{joueur.statistics[0].team.name}</li>
-            </ul>
-          ))}
+          <div className="headTeam">
+            {joueurs.slice(0, 1).map((joueur) =>
+              <p >{joueur.statistics[0].team.name}</p>
+            )}
+
+            {joueurs.slice(0, 1).map((joueur) =>
+              <img src={joueur.statistics[0].team.logo} alt="" />
+            )}
+          </div>
+
           {joueurs.map((joueur) => (
             <ul>
               <li >{joueur.player.name}</li>
@@ -73,34 +79,3 @@ function Effectif({idTeam}, props) {
 }
 
 export default Effectif
-
-// A tester ---------->
-
-
-// import React, { useState, useEffect } from 'react';
-
-// function MonComposant() {
-//   const [joueurs, setJoueurs] = useState([]);
-
-//   useEffect(() => {
-//     fetch('https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?t=Marseille')
-//       .then((response) => response.json())
-//       .then((data) => {
-//         setJoueurs(data.player);
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
-//   }, []);
-
-//   return (
-//     <div>
-//       <h1>Joueurs de l'équipe de Marseille</h1>
-//       <ul>
-//         {joueurs.map((joueur) => (
-//           <li key={joueur.idPlayer}>{joueur.strPlayer}</li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
