@@ -2,6 +2,10 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+
+
+
+
 // import Equipes from './Equipes';
 
 
@@ -42,9 +46,14 @@ function Effectif({idTeam}, props) {
 
 
       return <EffectifPlayers>
-
         <div>
           {/* <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1> */}
+          {/* <img src={joueurs[0].statistics[0].team.logo} alt="" /> */}
+          {joueurs.map((joueur) => (
+            <ul>
+              <li >{joueur.statistics[0].team.name}</li>
+            </ul>
+          ))}
           {joueurs.map((joueur) => (
             <ul>
               <li >{joueur.player.name}</li>

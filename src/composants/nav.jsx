@@ -57,15 +57,7 @@ function Nav() {
       document.addEventListener("mousedown", handler)
     })
     let menuRef = useRef();
-    // const imgRef = useRef();
 
-
-    // window.addEventListener('click', (e) => {
-    //   console.log(e.target !== menuRef.current && e.target !== imgRef.current)
-      // {
-      //   setOpen(false);
-      // }
-    // });
 
   return <NavContainer>
     <Link to="/"><Logo src={ballon} alt="ballonLogo" /></Link>

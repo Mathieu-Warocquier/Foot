@@ -10,7 +10,7 @@ function Ligue() {
 
   return (
   <div>
-    <Ligues id={idLigue}>Ligue 1</Ligues>
+    <Ligues id={idLigue}></Ligues>
     <Equipes id={idLigue}></Equipes>
   </div>)
 
