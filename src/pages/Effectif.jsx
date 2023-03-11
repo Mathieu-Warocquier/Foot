@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import '../style/Effectif.css';
+import footballeur from '../assets/footballeur.png'
+
 
 
 // import Equipes from './Equipes';
@@ -69,13 +71,16 @@ function Effectif({idTeam}, props) {
                 <img src={joueur.player.photo} alt="joueur de foot" className='joueurImg'/>
 
                 <div className="infoJoueur">
-                  <p >{joueur.player.firstname}</p>
-                  <p >{joueur.player.lastname}</p>
+                  <div className="identite">
+                    <p className='lastname'>{joueur.player.lastname}</p>
+                    <p >{joueur.player.firstname}</p>
+                  </div>
                   {/* <p >{joueur.player.age} ans</p>
                   <p >{joueur.player.nationapty}</p>
                   <p >{joueur.player.height}</p>
                   <p >{joueur.player.weight}</p> */}
                   {/* <p >{joueur.player.birth.date}</p> */}
+                  <img src={footballeur} alt="" />
                   <p >{joueur.statistics[0].games.position}</p>
                 </div>
               </div>

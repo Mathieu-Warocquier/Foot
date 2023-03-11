@@ -54,3 +54,22 @@
   align-items: center;
   justify-content: center;
 }
+
+.infoJoueur p {
+  margin: 0;
+  font-family: 'Ubuntu', 'Poppins', Courier;
+  font-weight: bold;
+
+}
+
+.identite {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lastname {
+  text-transform: uppercase;
+}
