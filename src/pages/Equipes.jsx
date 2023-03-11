@@ -29,14 +29,7 @@ function Equipes({id}, props) {
       flex-flow: wrap;
       font-family: 'Ubuntu', 'Poppins', Courier;
       justify-content: center;
-
-      /* border: 2px solid white;
-      padding: 25px;
-      margin: 30px;
-      border-radius: 10px; */
     `
-
-    // console.log(id)
 
 // const location = useLocation();
 // console.log(location)
@@ -74,4 +67,4 @@ function Equipes({id}, props) {
     </EquipeContainer>
   }
 
-  export default Equipes
+export default Equipes

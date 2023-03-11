@@ -1,0 +1,56 @@
+.headTeam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f15f;
+  backdrop-filter: blur(20px);
+  height: 230px;
+  margin: 25px;
+  padding: 25px;
+  color: black;
+  border-radius: 10px;
+  position: sticky;
+  top: 0px;
+  font-family: 'Ubuntu', 'Poppins', Courier;
+
+}
+
+.titre {
+  font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
+}
+
+.club {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.joueurs {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.joueurImg {
+  border-radius: 50%;
+}
+
+.joueur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+
+.infoJoueur {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

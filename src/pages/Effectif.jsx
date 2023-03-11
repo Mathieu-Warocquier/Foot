@@ -2,8 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
-
-
+import '../style/Effectif.css';
 
 
 // import Equipes from './Equipes';
@@ -51,28 +50,37 @@ function Effectif({idTeam}, props) {
           {/* <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1> */}
           {/* <img src={joueurs[0].statistics[0].team.logo} alt="" /> */}
           <div className="headTeam">
-            {joueurs.slice(0, 1).map((joueur) =>
-              <p >{joueur.statistics[0].team.name}</p>
-            )}
+            <div className="club">
+              {joueurs.slice(0, 1).map((joueur) =>
+                <p >{joueur.statistics[0].team.name}</p>
+              )}
 
-            {joueurs.slice(0, 1).map((joueur) =>
-              <img src={joueur.statistics[0].team.logo} alt="" />
-            )}
+              {joueurs.slice(0, 1).map((joueur) =>
+                <img src={joueur.statistics[0].team.logo} alt="" />
+              )}
+            </div>
+            <h1 className='titre'>Effectif</h1>
           </div>
 
-          {joueurs.map((joueur) => (
-            <ul>
-              <li >{joueur.player.name}</li>
-              <li >{joueur.player.firstname}</li>
-              <li >{joueur.player.lastname}</li>
-              <li >{joueur.player.age} ans</li>
-              <li >{joueur.player.nationality}</li>
-              <li >{joueur.player.height}</li>
-              <li >{joueur.player.weight}</li>
-              <img src={joueur.player.photo} alt="joueur de foot" />
-              <li >{joueur.player.birth.date}</li>
-            </ul>
-          ))}
+          <div className="joueurs">
+            {joueurs.map((joueur) => (
+              <div className="joueur">
+                {/* <li >{joueur.player.name}</li> */}
+                <img src={joueur.player.photo} alt="joueur de foot" className='joueurImg'/>
+
+                <div className="infoJoueur">
+                  <p >{joueur.player.firstname}</p>
+                  <p >{joueur.player.lastname}</p>
+                  {/* <p >{joueur.player.age} ans</p>
+                  <p >{joueur.player.nationapty}</p>
+                  <p >{joueur.player.height}</p>
+                  <p >{joueur.player.weight}</p> */}
+                  {/* <p >{joueur.player.birth.date}</p> */}
+                  <p >{joueur.statistics[0].games.position}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </EffectifPlayers>
 
