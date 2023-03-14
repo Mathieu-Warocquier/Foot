@@ -5,10 +5,10 @@
   background-color: #f1f1f15f;
   backdrop-filter: blur(20px);
   height: 230px;
-  margin: 25px;
+  margin: 25px 40px;
   padding: 25px;
   color: black;
-  border-radius: 10px;
+  border-radius: 50px 0 50px 0;
   position: sticky;
   top: 0px;
   font-family: 'Ubuntu', 'Poppins', Courier;
@@ -40,11 +40,22 @@
 }
 
 .joueur {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 25px;
+  border: 4px solid #6dd06f4b;
+
+  /* background-image: linear-gradient(45deg, #0f2e4c,#6dd06e); */
+  border-radius: 50px 0 50px;
+  width: 20%;
+  padding: 15px 0;
+}
+
+.joueur:hover {
+  /* background-color: #F1F1F1; */
 }
 
 .infoJoueur {
@@ -68,6 +79,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .lastname {

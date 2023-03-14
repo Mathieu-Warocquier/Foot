@@ -56,11 +56,11 @@ function Equipes({id}, props) {
                     <p>Année : {team.team.founded}</p>
                     <p>Ville : {team.venue.city}</p>
                   </div>
+                {/* <img src={team.venue.image} alt="stade" /> */}
                 </Link>
               {/* </div> */}
               {/* <div className="TeamStade"> */}
                 {/* <p>Stade : {team.venue.name}</p> */}
-                {/* <img src={team.venue.image} alt="stade" /> */}
               {/* </div> */}
             </div>
            ))}

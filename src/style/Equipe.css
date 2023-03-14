@@ -10,7 +10,7 @@
 
 .TeamLink {
   border: 4px solid #F1F1F1;
-  border-radius: 10px;
+  border-radius: 50px 0 50px 0;
   text-align: center;
   text-decoration: none;
   color: #f1f1f1;
@@ -29,6 +29,8 @@
   border-radius: 10px;
   color: #6dd06e;
   border: 4px solid #6dd06e;
+  border-radius: 0 50px 0 50px;
+
 }
 
 .imgTeam {
