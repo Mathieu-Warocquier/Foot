@@ -40,11 +40,12 @@ function Equipes({id}, props) {
     return <EquipeContainer>
        {results.map((team, index) => (
             <div className='TeamContenu'>
-              {/* <div className="TeamHead"> */}
                 <Link to= {{ pathname: `./Effectif/${team.team.id}` }} className='TeamLink'>
+              {/* <div className="TeamHead"> */}
+                <img src={team.venue.image} alt="stade" className='imgStade' />
                   <div className="imgTeam">
 
-                  <img src={team.team.logo} alt="Logo club" />
+                  <img src={team.team.logo} alt="Logo club"/>
                   </div>
                   {/* <p>id : {idTeam}</p> */}
                 {/* <h1>{team.team.id}</h1> */}
@@ -56,7 +57,6 @@ function Equipes({id}, props) {
                     <p>Année : {team.team.founded}</p>
                     <p>Ville : {team.venue.city}</p>
                   </div>
-                {/* <img src={team.venue.image} alt="stade" /> */}
                 </Link>
               {/* </div> */}
               {/* <div className="TeamStade"> */}

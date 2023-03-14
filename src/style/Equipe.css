@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.imgStade {
+  max-width: 100%;
+}
+
 .TeamLink:hover {
   /* background-color: rgba(255, 255, 255, 0.104); */
   border-radius: 10px;
@@ -35,17 +39,26 @@
 
 .imgTeam {
   background-color: #f1f1f1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 210px;
-    width: 210px;
-    /* margin: 0; */
-    position: absolute;
-    top: -25px;
-    z-index: 2;
+  border-radius: 30% 0 30% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  width: 180px;
+  /* margin: 0; */
+  position: absolute;
+  top: 20px;
+  z-index: 2;
 }
+
+.imgTeam > img {
+  height: 90px;
+
+}
+
+
+
+
 
 .Link {
   margin: 10px 10px;
