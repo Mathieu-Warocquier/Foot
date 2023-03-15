@@ -2,57 +2,80 @@
   /* padding: 25px; */
   margin: 30px;
   width: 25%;
-  height: 400px;
-  display: flex;
+  min-height: 425px;
+  /* display: flex;
   justify-content: center;
+  align-items: center; */
+  text-align: center;
+  /* position: relative; */
+  border: 1px solid #4e4e4e;
+  border-radius: 50px 0 50px 0;
+  transition: all 300ms linear;
+  background-color: #171717;
+  text-align: center;
   position: relative;
+
 }
 
 .TeamLink {
-  border: 4px solid #F1F1F1;
-  border-radius: 50px 0 50px 0;
-  text-align: center;
-  text-decoration: none;
   color: #f1f1f1;
-  /* position: relative; */
-  transition: all 300ms linear;
+  font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
+  text-decoration: none;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+
+  /*
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+   */
 }
 
 .imgStade {
   max-width: 100%;
+  margin-top: 50px;
 }
 
-.TeamLink:hover {
+.TeamContenu:hover {
   /* background-color: rgba(255, 255, 255, 0.104); */
   border-radius: 10px;
   color: #6dd06e;
-  border: 4px solid #6dd06e;
+  border: 1px solid #4e4e4e;
   border-radius: 0 50px 0 50px;
 
+}
+
+.TeamLink:hover {
+  color: #f1f1f1;
 }
 
 .imgTeam {
   background-color: #f1f1f1;
   border-radius: 30% 0 30% 0;
+  border: 1px solid #4e4e4e;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110px;
-  width: 180px;
+  /* height: 110px;
+  width: 180px; */
   /* margin: 0; */
+  /* position: absolute; */
+  /* top: 20px; */
+  /* top: -50%;
+  left: 35%; */
   position: absolute;
-  top: 20px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   z-index: 2;
 }
 
 .imgTeam > img {
   height: 90px;
+  padding: 10px 25px;
 
 }
 
@@ -60,13 +83,14 @@
 
 
 
-.Link {
-  margin: 10px 10px;
+.linkName {
+  margin: 20px 20px;
+
 }
 
 .TeamInfo {
-  position: absolute;
-  bottom: 25px;
+  /* position: absolute;
+  bottom: 25px; */
 }
 
 /* .TeamStade {

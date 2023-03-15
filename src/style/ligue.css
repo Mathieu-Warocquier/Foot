@@ -10,6 +10,7 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ color: #F1F1F1;
 }
 
 .pays > img {

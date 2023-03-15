@@ -20,11 +20,11 @@ function Ligues({id}) {
     ;},[]);
 
     const CardContainer = styled.div`
-      /* color: white;
-      border: 2px solid white; */
+      color: #F1F1F1;
       color: black;
-      background-color: #f1f1f15f;
+      background-color: #1717175e;
       backdrop-filter: blur(20px);
+      border: 1px solid #4e4e4e;
       height: 230px;
       position: sticky;
       /* position: relative; */
@@ -32,7 +32,7 @@ function Ligues({id}) {
       margin-top: 100px;
       padding: 25px 75px;
       margin: 30px;
-      border-radius: 10px;
+      border-radius: 50px 0 50px 0;
       display: flex;
       font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
       z-index: 5;

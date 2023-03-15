@@ -43,20 +43,20 @@ function Equipes({id}, props) {
                 <Link to= {{ pathname: `./Effectif/${team.team.id}` }} className='TeamLink'>
               {/* <div className="TeamHead"> */}
                 <img src={team.venue.image} alt="stade" className='imgStade' />
-                  <div className="imgTeam">
 
-                  <img src={team.team.logo} alt="Logo club"/>
+                  <div className="imgTeam">
+                    <img src={team.team.logo} alt="Logo club" className="imgTeam"/>
                   </div>
+                    <h1 className='linkName'>{team.team.name}</h1>
                   {/* <p>id : {idTeam}</p> */}
                 {/* <h1>{team.team.id}</h1> */}
                 {/* <div className='TeamLink'> */}
                 {/* </div> */}
                 {/* <p>{team.team.code}</p> */}
-                  <div className="TeamInfo">
-                    <h1 className='Link'>{team.team.name}</h1>
-                    <p>Année : {team.team.founded}</p>
-                    <p>Ville : {team.venue.city}</p>
-                  </div>
+                  {/* <div className="TeamInfo"> */}
+                    {/* <p>Année : {team.team.founded}</p>
+                    <p>Ville : {team.venue.city}</p> */}
+                  {/* </div> */}
                 </Link>
               {/* </div> */}
               {/* <div className="TeamStade"> */}
