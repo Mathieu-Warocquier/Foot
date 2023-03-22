@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import '../style/Effectif.css';
-import footballeur from '../assets/footballeur.png'
+import footballeur from '../assets/football.png'
 
 
 
@@ -46,7 +46,6 @@ function Effectif({idTeam}, props) {
       `
 
 
-
       return <EffectifPlayers>
         <div>
           {/* <h1>Joueurs de l'équipe de {joueurs[0].statistics[0].team.name}</h1> */}
@@ -64,31 +63,46 @@ function Effectif({idTeam}, props) {
             <h1 className='titre'>Effectif</h1>
           </div>
 
+
+
+
+
+
           <div className="joueurs">
             {joueurs.map((joueur) => (
-              <div className="joueur">
-                {/* <li >{joueur.player.name}</li> */}
-                <img src={joueur.player.photo} alt="joueur de foot" className='joueurImg'/>
+              // <div className="card" style={{background: `url(${joueur.player.photo})`}}>
+                <div className="card" style={Object.assign({background: `url(${joueur.player.photo})`}, {backgroundRepeat: 'no-repeat', backgroundPosition: 'center'})}>
 
-                <div className="infoJoueur">
-                  <div className="identite">
-                    <p className='lastname'>{joueur.player.lastname}</p>
+                {/* <img src={joueur.player.photo} alt="joueur de foot" className='joueurImg'/> */}
+
+                <div className="card_body">
+                  <h2 className="card_title">{joueur.player.lastname}</h2>
+
+                    {/* <p className='lastname'>{joueur.player.lastname}</p> */}
                     <p >{joueur.player.firstname}</p>
-                  </div>
-                  {/* <p >{joueur.player.age} ans</p>
-                  <p >{joueur.player.nationapty}</p>
-                  <p >{joueur.player.height}</p>
-                  <p >{joueur.player.weight}</p> */}
-                  {/* <p >{joueur.player.birth.date}</p> */}
-                  <img src={footballeur} alt="" />
+
+
+                  <img src={footballeur} alt=""/>
                   <p >{joueur.statistics[0].games.position}</p>
                 </div>
               </div>
             ))}
           </div>
+
+
+        {/* <article className="card">
+            <div className="card_body">
+              <h2 className="card_title">
+                Pedri
+              </h2>
+              <p>FC Barcelone Milieu ...</p>
+            </div>
+          </article> */}
+
         </div>
       </EffectifPlayers>
 
 }
+
 
 export default Effectif
