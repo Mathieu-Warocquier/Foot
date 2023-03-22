@@ -65,9 +65,6 @@ function Effectif({idTeam}, props) {
 
 
 
-
-
-
           <div className="joueurs">
             {joueurs.map((joueur) => (
               // <div className="card" style={{background: `url(${joueur.player.photo})`}}>

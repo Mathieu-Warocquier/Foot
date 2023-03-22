@@ -2,23 +2,44 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f1f1f15f;
+  background-color: #1717175e;
   backdrop-filter: blur(20px);
-  height: 230px;
-  margin: 25px 40px;
-  padding: 25px;
-  color: black;
+  border: 1px solid #4e4e4e;
+  height: 260px;
+  margin: 25px 30px;
+  padding: 75px;
+  /* color: black; */
+  color: #F1F1F1;
   border-radius: 50px 0 50px 0;
   position: sticky;
   top: 0px;
-  font-family: 'Ubuntu', 'Poppins', Courier;
+  font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
   z-index: 1000;
 
+
+
+  /* color: #F1F1F1;
+      color: black;
+      background-color: #1717175e;
+      backdrop-filter: blur(20px);
+      border: 1px solid #4e4e4e;
+      height: 230px;
+      position: sticky;
+      /* position: relative; */
+      /* top: 0px;
+      margin-top: 100px;
+      padding: 25px 75px;
+      margin: 30px;
+      border-radius: 50px 0 50px 0;
+      display: flex;
+      font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
+      z-index: 5; */
+
 }
 
-.titre {
+/* .titre {
   font-family: 'bespoke_stencilextrabold', 'Ubuntu', 'Poppins', Courier;
-}
+} */
 
 .club {
   display: flex;
@@ -98,7 +119,8 @@
   height: 250px;
   color: #a18a96;
   text-align: center;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
+  border: 1px solid #4e4e4e;
   background-position: center;
   background-repeat: no-repeat;
   /* background: center no-repeat; */
